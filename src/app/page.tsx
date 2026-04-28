@@ -56,8 +56,8 @@ export default function LandingPage() {
         <div id="metric" data-section="metric">
           <MetricCardSeven
             metrics={[
-              { value: "100%", description: "Quality Assurance" },
-              { value: "Apex", description: "Design Excellence" }
+              { id: "m1", value: "100%", title: "Quality Assurance", items: [] },
+              { id: "m2", value: "Apex", title: "Design Excellence", items: [] }
             ]}
             title="Performance"
             description="Standards that define us."
