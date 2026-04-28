@@ -55,7 +55,7 @@ export default function LandingPage() {
           handle: "@m.v",
           testimonial: "Quality unmatched.",
           rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-man-wearing-sunglasses_23-2149409711.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-man-wearing-sunglasses_23-2149409711.jpg?_wi=1",
           imageAlt: "model fashion streetwear photography",
         },
         {
@@ -63,7 +63,7 @@ export default function LandingPage() {
           handle: "@e.s",
           testimonial: "The vision is clear.",
           rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/stacked-aesthetic-objects-still-life_23-2150230645.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/stacked-aesthetic-objects-still-life_23-2150230645.jpg?_wi=1",
           imageAlt: "model fashion streetwear photography",
         },
         {
@@ -71,7 +71,7 @@ export default function LandingPage() {
           handle: "@j.l",
           testimonial: "Premium weight and fit.",
           rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-cool-woman-chair-indoors_23-2149359823.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-cool-woman-chair-indoors_23-2149359823.jpg?_wi=1",
           imageAlt: "model fashion streetwear photography",
         },
         {
@@ -79,7 +79,7 @@ export default function LandingPage() {
           handle: "@s.r",
           testimonial: "My new favorite brand.",
           rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/side-view-woman-with-graphic-eye-makeup_23-2150723149.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/side-view-woman-with-graphic-eye-makeup_23-2150723149.jpg?_wi=1",
           imageAlt: "model fashion streetwear photography",
         },
         {
@@ -87,11 +87,11 @@ export default function LandingPage() {
           handle: "@a.p",
           testimonial: "Exquisite attention to detail.",
           rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/close-up-woman-holding-skateboard_23-2148436057.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/close-up-woman-holding-skateboard_23-2148436057.jpg?_wi=1",
           imageAlt: "model fashion streetwear photography",
         },
       ]}
-      imageSrc="http://img.b2bpic.net/free-photo/medium-shot-man-wearing-sunglasses_23-2149409711.jpg"
+      imageSrc="http://img.b2bpic.net/free-photo/medium-shot-man-wearing-sunglasses_23-2149409711.jpg?_wi=2"
       imageAlt="EYE Brand Campaign"
       avatars={[
         {
