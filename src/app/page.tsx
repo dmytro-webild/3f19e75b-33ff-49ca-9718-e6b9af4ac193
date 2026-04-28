@@ -2,14 +2,12 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import { ShieldCheck, Award } from "lucide-react";
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
 import HeroOverlayTestimonial from '@/components/sections/hero/HeroOverlayTestimonial';
 import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
-import PricingCardFive from '@/components/sections/pricing/PricingCardFive';
-import ProductCardFour from '@/components/sections/product/ProductCardFour';
 import TeamCardSix from '@/components/sections/team/TeamCardSix';
+import ProductCardFour from '@/components/sections/product/ProductCardFour';
 
 export default function LandingPage() {
   return (
@@ -67,38 +65,6 @@ export default function LandingPage() {
           />
         </div>
 
-        <div id="pricing" data-section="pricing">
-          <PricingCardFive
-            plans={[
-              { 
-                id: "standard", 
-                tag: "Standard", 
-                period: "Monthly", 
-                description: "Entry level access", 
-                price: "$50", 
-                features: ["Standard quality"], 
-                button: { text: "Select" }, 
-                featuresTitle: "Key benefits"
-              },
-              { 
-                id: "premium", 
-                tag: "Premium", 
-                period: "Monthly", 
-                description: "Full access", 
-                price: "$150", 
-                features: ["Premium quality"], 
-                button: { text: "Select" }, 
-                featuresTitle: "Key benefits"
-              }
-            ]}
-            title="Pricing"
-            description="Transparent access to the archive."
-            animationType="slide-up"
-            textboxLayout="default"
-            useInvertedBackground={false}
-          />
-        </div>
-
         <div id="ecommerce" data-section="ecommerce">
           <ProductCardFour
             title="Featured"
@@ -131,18 +97,8 @@ export default function LandingPage() {
         <div id="footer" data-section="footer">
           <FooterLogoEmphasis
             columns={[
-              {
-                items: [
-                  { label: "Shop", href: "/shop" },
-                  { label: "Contact", href: "/contact" },
-                ],
-              },
-              {
-                items: [
-                  { label: "Privacy", href: "#" },
-                  { label: "Terms", href: "#" },
-                ],
-              },
+              { items: [{ label: "Shop", href: "/shop" }, { label: "Contact", href: "/contact" }] },
+              { items: [{ label: "Privacy", href: "#" }, { label: "Terms", href: "#" }] },
             ]}
             logoText="EYE™"
           />
