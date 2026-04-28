@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import { Zap, ShieldCheck, Award } from "lucide-react";
+import { ShieldCheck, Award } from "lucide-react";
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
 import HeroOverlayTestimonial from '@/components/sections/hero/HeroOverlayTestimonial';
 import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
@@ -56,8 +56,8 @@ export default function LandingPage() {
         <div id="metric" data-section="metric">
           <MetricCardSeven
             metrics={[
-              { icon: ShieldCheck, value: "100%", description: "Quality Assurance" },
-              { icon: Award, value: "Apex", description: "Design Excellence" }
+              { value: "100%", description: "Quality Assurance" },
+              { value: "Apex", description: "Design Excellence" }
             ]}
             title="Performance"
             description="Standards that define us."
