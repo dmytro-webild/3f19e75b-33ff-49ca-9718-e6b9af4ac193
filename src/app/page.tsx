@@ -2,6 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
+import { Zap, ShieldCheck, Award } from "lucide-react";
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
 import HeroOverlayTestimonial from '@/components/sections/hero/HeroOverlayTestimonial';
 import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
@@ -54,7 +55,10 @@ export default function LandingPage() {
 
         <div id="metric" data-section="metric">
           <MetricCardSeven
-            metrics={[{ label: "Quality", value: "100%" }, { label: "Style", value: "Apex" }]} 
+            metrics={[
+              { icon: ShieldCheck, value: "100%", description: "Quality Assurance" },
+              { icon: Award, value: "Apex", description: "Design Excellence" }
+            ]}
             title="Performance"
             description="Standards that define us."
             animationType="slide-up"
@@ -66,8 +70,26 @@ export default function LandingPage() {
         <div id="pricing" data-section="pricing">
           <PricingCardFive
             plans={[
-              { id: "standard", tag: "Standard", period: "Monthly", description: "Entry level access", price: "$50", features: ["Standard quality"] },
-              { id: "premium", tag: "Premium", period: "Monthly", description: "Full access", price: "$150", features: ["Premium quality"] }
+              { 
+                id: "standard", 
+                tag: "Standard", 
+                period: "Monthly", 
+                description: "Entry level access", 
+                price: "$50", 
+                features: ["Standard quality"], 
+                button: { text: "Select" }, 
+                featuresTitle: "Key benefits"
+              },
+              { 
+                id: "premium", 
+                tag: "Premium", 
+                period: "Monthly", 
+                description: "Full access", 
+                price: "$150", 
+                features: ["Premium quality"], 
+                button: { text: "Select" }, 
+                featuresTitle: "Key benefits"
+              }
             ]}
             title="Pricing"
             description="Transparent access to the archive."
