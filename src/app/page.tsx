@@ -7,7 +7,7 @@ import HeroOverlayTestimonial from '@/components/sections/hero/HeroOverlayTestim
 import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import PricingCardFive from '@/components/sections/pricing/PricingCardFive';
-import ProductCatalogItem from '@/components/ecommerce/productCatalog/ProductCatalogItem';
+import ProductCardFour from '@/components/sections/product/ProductCardFour';
 import TeamCardSix from '@/components/sections/team/TeamCardSix';
 
 export default function LandingPage() {
@@ -28,18 +28,9 @@ export default function LandingPage() {
   <div id="nav" data-section="nav">
       <NavbarStyleFullscreen
       navItems={[
-        {
-          name: "Home",
-          id: "/",
-        },
-        {
-          name: "Shop",
-          id: "/shop",
-        },
-        {
-          name: "Contact",
-          id: "/contact",
-        },
+        { name: "Home", id: "/" },
+        { name: "Shop", id: "/shop" },
+        { name: "Contact", id: "/contact" },
       ]}
       brandName="EYE™"
     />
@@ -50,76 +41,22 @@ export default function LandingPage() {
       title="EYE™ ARCHIVE"
       description="Defined by vision. Crafted for the future."
       testimonials={[
-        {
-          name: "Marcus V.",
-          handle: "@m.v",
-          testimonial: "Quality unmatched.",
-          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-man-wearing-sunglasses_23-2149409711.jpg?_wi=1",
-          imageAlt: "model fashion streetwear photography",
-        },
-        {
-          name: "Elena S.",
-          handle: "@e.s",
-          testimonial: "The vision is clear.",
-          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/stacked-aesthetic-objects-still-life_23-2150230645.jpg?_wi=1",
-          imageAlt: "model fashion streetwear photography",
-        },
-        {
-          name: "James L.",
-          handle: "@j.l",
-          testimonial: "Premium weight and fit.",
-          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-cool-woman-chair-indoors_23-2149359823.jpg?_wi=1",
-          imageAlt: "model fashion streetwear photography",
-        },
-        {
-          name: "Sofia R.",
-          handle: "@s.r",
-          testimonial: "My new favorite brand.",
-          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/side-view-woman-with-graphic-eye-makeup_23-2150723149.jpg?_wi=1",
-          imageAlt: "model fashion streetwear photography",
-        },
-        {
-          name: "Alex P.",
-          handle: "@a.p",
-          testimonial: "Exquisite attention to detail.",
-          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/close-up-woman-holding-skateboard_23-2148436057.jpg?_wi=1",
-          imageAlt: "model fashion streetwear photography",
-        },
+        { name: "Marcus V.", handle: "@m.v", testimonial: "Quality unmatched.", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-man-wearing-sunglasses_23-2149409711.jpg", imageAlt: "model fashion streetwear photography" },
+        { name: "Elena S.", handle: "@e.s", testimonial: "The vision is clear.", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/stacked-aesthetic-objects-still-life_23-2150230645.jpg", imageAlt: "model fashion streetwear photography" },
+        { name: "James L.", handle: "@j.l", testimonial: "Premium weight and fit.", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-cool-woman-chair-indoors_23-2149359823.jpg", imageAlt: "model fashion streetwear photography" },
+        { name: "Sofia R.", handle: "@s.r", testimonial: "My new favorite brand.", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/side-view-woman-with-graphic-eye-makeup_23-2150723149.jpg", imageAlt: "model fashion streetwear photography" },
+        { name: "Alex P.", handle: "@a.p", testimonial: "Exquisite attention to detail.", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/close-up-woman-holding-skateboard_23-2148436057.jpg", imageAlt: "model fashion streetwear photography" },
       ]}
-      imageSrc="http://img.b2bpic.net/free-photo/medium-shot-man-wearing-sunglasses_23-2149409711.jpg?_wi=2"
+      imageSrc="http://img.b2bpic.net/free-photo/medium-shot-man-wearing-sunglasses_23-2149409711.jpg"
       imageAlt="EYE Brand Campaign"
-      avatars={[
-        {
-          src: "http://img.b2bpic.net/free-photo/young-handsome-african-american-man-posing-outdoors-paris-happy-smile-fashion-style-lights-evening-cafes_1321-3400.jpg",
-          alt: "Young handsome african american man posing outdoors in Paris",
-        },
-        {
-          src: "http://img.b2bpic.net/free-photo/side-view-woman-posing-night-with-flash_23-2150204451.jpg",
-          alt: "Side view woman posing at night with flash",
-        },
-        {
-          src: "http://img.b2bpic.net/free-photo/stylish-woman-wearing-blue-wig-sitting-stairs_158595-4336.jpg",
-          alt: "Stylish woman wearing a blue wig sitting on stairs",
-        },
-        {
-          src: "http://img.b2bpic.net/free-photo/girl-scary-bandage-mask-sitting_23-2147680394.jpg",
-          alt: "Girl in scary bandage mask sitting",
-        },
-        {
-          src: "http://img.b2bpic.net/free-photo/pilates-instructor-gym_1303-23269.jpg",
-          alt: "Pilates instructor at the gym",
-        },
-      ]}
     />
   </div>
 
   <div id="metric" data-section="metric">
       <MetricCardSeven
+      metrics={[{ label: "Quality", value: "100%" }, { label: "Style", value: "Apex" }]} 
+      title="Performance"
+      description="Standards that define us."
       animationType="slide-up"
       textboxLayout="default"
       useInvertedBackground={false}
@@ -128,6 +65,9 @@ export default function LandingPage() {
 
   <div id="pricing" data-section="pricing">
       <PricingCardFive
+      plans={[{ name: "Basic", price: "$50", features: ["Standard quality"] }, { name: "Pro", price: "$150", features: ["Premium quality"] }]}
+      title="Pricing"
+      description="Transparent access to the archive."
       animationType="slide-up"
       textboxLayout="default"
       useInvertedBackground={false}
@@ -135,11 +75,22 @@ export default function LandingPage() {
   </div>
 
   <div id="ecommerce" data-section="ecommerce">
-      <ProductCatalogItem />
+      <ProductCardFour
+      title="Featured"
+      description="Our latest releases."
+      gridVariant="three-columns-all-equal-width"
+      animationType="slide-up"
+      textboxLayout="default"
+      useInvertedBackground={false}
+      products={[{ id: "1", name: "Tee", price: "$50", variant: "Black", imageSrc: "http://img.b2bpic.net/free-photo/stacked-aesthetic-objects-still-life_23-2150230645.jpg" }, { id: "2", name: "Hoodie", price: "$150", variant: "Black", imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-cool-woman-chair-indoors_23-2149359823.jpg" }, { id: "3", name: "Cap", price: "$30", variant: "Black", imageSrc: "http://img.b2bpic.net/free-photo/side-view-woman-with-graphic-eye-makeup_23-2150723149.jpg" }]}
+    />
   </div>
 
   <div id="team" data-section="team">
       <TeamCardSix
+      members={[{ name: "Alice", role: "Director", imageSrc: "http://img.b2bpic.net/free-photo/side-view-woman-posing-night-with-flash_23-2150204451.jpg" }, { name: "Bob", role: "Design", imageSrc: "http://img.b2bpic.net/free-photo/young-handsome-african-american-man-posing-outdoors-paris-happy-smile-fashion-style-lights-evening-cafes_1321-3400.jpg" }]}
+      title="Team"
+      description="The people behind the vision."
       animationType="slide-up"
       textboxLayout="default"
       gridVariant="uniform-all-items-equal"
@@ -152,26 +103,14 @@ export default function LandingPage() {
       columns={[
         {
           items: [
-            {
-              label: "Shop",
-              href: "/shop",
-            },
-            {
-              label: "Contact",
-              href: "/contact",
-            },
+            { label: "Shop", href: "/shop" },
+            { label: "Contact", href: "/contact" },
           ],
         },
         {
           items: [
-            {
-              label: "Privacy",
-              href: "#",
-            },
-            {
-              label: "Terms",
-              href: "#",
-            },
+            { label: "Privacy", href: "#" },
+            { label: "Terms", href: "#" },
           ],
         },
       ]}
