@@ -105,8 +105,9 @@ export default function LandingPage() {
             description="Our latest releases."
             gridVariant="three-columns-all-equal-width"
             animationType="slide-up"
-            textboxLayout="default"
+            textboxLayout="split-actions"
             useInvertedBackground={false}
+            buttons={[{ text: "View Full Catalog", href: "/shop" }]}
             products={[
               { id: "1", name: "Tee", price: "$50", variant: "Black", imageSrc: "http://img.b2bpic.net/free-photo/stacked-aesthetic-objects-still-life_23-2150230645.jpg" },
               { id: "2", name: "Hoodie", price: "$150", variant: "Black", imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-cool-woman-chair-indoors_23-2149359823.jpg" },
