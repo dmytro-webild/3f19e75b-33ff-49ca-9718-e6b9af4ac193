@@ -9,6 +9,7 @@ import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/Nav
 import PricingCardFive from '@/components/sections/pricing/PricingCardFive';
 import ProductCardFour from '@/components/sections/product/ProductCardFour';
 import TeamCardSix from '@/components/sections/team/TeamCardSix';
+import { Shield, Sparkles } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -54,7 +55,7 @@ export default function LandingPage() {
 
   <div id="metric" data-section="metric">
       <MetricCardSeven
-      metrics={[{ label: "Quality", value: "100%" }, { label: "Style", value: "Apex" }]} 
+      metrics={[{ icon: Shield, label: "Quality", value: "100%" }, { icon: Sparkles, label: "Style", value: "Apex" }]} 
       title="Performance"
       description="Standards that define us."
       animationType="slide-up"
@@ -65,7 +66,7 @@ export default function LandingPage() {
 
   <div id="pricing" data-section="pricing">
       <PricingCardFive
-      plans={[{ name: "Basic", price: "$50", features: ["Standard quality"] }, { name: "Pro", price: "$150", features: ["Premium quality"] }]}
+      plans={[{ price: "$50", features: ["Standard quality"] }, { price: "$150", features: ["Premium quality"] }]}
       title="Pricing"
       description="Transparent access to the archive."
       animationType="slide-up"
@@ -88,7 +89,7 @@ export default function LandingPage() {
 
   <div id="team" data-section="team">
       <TeamCardSix
-      members={[{ name: "Alice", role: "Director", imageSrc: "http://img.b2bpic.net/free-photo/side-view-woman-posing-night-with-flash_23-2150204451.jpg" }, { name: "Bob", role: "Design", imageSrc: "http://img.b2bpic.net/free-photo/young-handsome-african-american-man-posing-outdoors-paris-happy-smile-fashion-style-lights-evening-cafes_1321-3400.jpg" }]}
+      members={[{ id: "1", name: "Alice", role: "Director", imageSrc: "http://img.b2bpic.net/free-photo/side-view-woman-posing-night-with-flash_23-2150204451.jpg" }, { id: "2", name: "Bob", role: "Design", imageSrc: "http://img.b2bpic.net/free-photo/young-handsome-african-american-man-posing-outdoors-paris-happy-smile-fashion-style-lights-evening-cafes_1321-3400.jpg" }]}
       title="Team"
       description="The people behind the vision."
       animationType="slide-up"
